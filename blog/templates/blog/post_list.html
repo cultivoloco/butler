@@ -10,20 +10,14 @@
             <a href="">Cultivoloco</a>
         </h1>
     </div>
+    {% for post in posts %}
     <div>
-        <p>published:13/09/2020, 17:20</p>
-        <h2><a href="">My first post</a></h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt augue at consectetur ornare. Curabitur consequat lorem augue, ut interdum lorem dignissim at. Donec convallis odio id orci ornare, hendrerit fermentum nisl euismod. Morbi
-            iaculis commodo nibh, eget pretium est facilisis ut. Fusce iaculis felis sagittis, porta tellus in, efficitur magna. Suspendisse vitae pulvinar ex, nec semper dui. Donec dictum magna dui, in egestas diam semper eget. Aenean cursus ipsum quis
-            augue euismod, ac convallis eros efficitur. Ut fermentum pretium odio, non pulvinar lacus vehicula id. Duis non placerat massa.</p>
+        <p>publicado: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
-    <div>
-        <p>published:13/09/2020, 17:20</p>
-        <h2><a href="">My second post</a></h2>
-        <p>Mauris ipsum tellus, scelerisque molestie ligula at, porttitor porttitor justo. Pellentesque feugiat sem ut est porttitor commodo. Fusce sit amet malesuada diam. Phasellus pulvinar vulputate leo, sed pharetra lacus tincidunt a. Pellentesque lobortis
-            non dui eu euismod. Nam ut libero cursus, suscipit turpis quis, tempus enim. Cras vel tellus ante. Sed lacinia felis sed neque pharetra faucibus. Fusce quam metus, eleifend laoreet est vitae, dignissim scelerisque quam. Pellentesque id ex
-            gravida, rutrum libero at, tincidunt neque. Mauris quis purus in erat pharetra vestibulum sagittis id tortor.</p>
-    </div>
+    {% endfor %}
+
 </body>
 
 </html>
