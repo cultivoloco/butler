@@ -25,7 +25,7 @@ SECRET_KEY = '&iy^@fz3$7=bh1f67p2by3!!z&+%ir*$6-1^lffhb$k7fijrh@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['cultivolco.pythonanywhere.com','127.0.0.1']
 
 
 # Application definition

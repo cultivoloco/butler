@@ -12,7 +12,9 @@
 <body>
     <div class="page-header">
         <h1>
-            <a href="">Cultivoloco</a>
+            {% if user.is_authenticated %}
+            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a> {% endif %}
+            <a href="/">Cultivoloco</a>
         </h1>
     </div>
     <div class="content container">
